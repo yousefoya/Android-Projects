@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Screen Title Style: 26sp, bold, monospace, neon green -->
+    <style name="Zeyu.TextView.Title" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/zeyu_primary</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <!-- Subtitle / Caption Style -->
+    <style name="Zeyu.TextView.Subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:textColor">@color/zeyu_secondary</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <!-- Section Label: 14sp, bold, monospace, cyan secondary -->
+    <style name="Zeyu.TextView.Label" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_section_label</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/zeyu_secondary</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <!-- Body / Values: 16sp, monospace, primary text -->
+    <style name="Zeyu.TextView.Body" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/zeyu_text_primary</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <!-- Value Row Label (small label above detail values) -->
+    <style name="Zeyu.TextView.RowLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/zeyu_text_secondary</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Common Input Field Style (EditText) -->
+    <style name="Zeyu.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/zeyu_text_primary</item>
+        <item name="android:textColorHint">@color/zeyu_text_secondary</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+
+    <!-- Primary Action Button: 56dp, bold, monospace, neon green -->
+    <style name="Zeyu.Button.Primary" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textColor">@color/zeyu_on_primary</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- CheckBox: neon green tint, monospace font -->
+    <style name="Zeyu.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/zeyu_primary</item>
+        <item name="android:textColor">@color/zeyu_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- RadioButton: neon green tint, monospace font -->
+    <style name="Zeyu.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:buttonTint">@color/zeyu_primary</item>
+        <item name="android:textColor">@color/zeyu_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- Spinner Dropdown Item Style -->
+    <style name="Zeyu.SpinnerDropDownItem" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/zeyu_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:background">@color/zeyu_surface</item>
+    </style>
+
+    <!-- Circle Shape for Avatar Image -->
+    <style name="ShapeAppearance.Zeyu.Circle" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

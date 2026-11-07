@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer Cyber Shield (Cyan #00E5FF) -->
+    <path
+        android:fillColor="#1500E5FF"
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M54,24 L76,32 V54 C76,68 66,76 54,80 C42,76 32,68 32,54 V32 Z" />
+
+    <!-- Inner Shield (Neon Green #00FF9C) -->
+    <path
+        android:fillColor="#2200FF9C"
+        android:strokeColor="#00FF9C"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M54,30 L70,36 V54 C70,64 62,71 54,74 C46,71 38,64 38,54 V36 Z" />
+
+    <!-- Lock Shackle -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00FF9C"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M48,51 V45 C48,41.7 50.7,39 54,39 C57.3,39 60,41.7 60,45 V51" />
+
+    <!-- Lock Body -->
+    <path
+        android:fillColor="#111827"
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="2"
+        android:pathData="M46,51 H62 V64 H46 Z" />
+
+    <!-- Cyber "Z" / Keyhole Emblem -->
+    <path
+        android:fillColor="#00FF9C"
+        android:pathData="M50,55 H58 V57 L53,60 H58 V62 H50 V60 L55,57 H50 Z" />
+
+    <!-- Glowing Tech Nodes -->
+    <path
+        android:fillColor="#00FF9C"
+        android:pathData="M54,24m-2,0a2,2 0 1,0 4,0a2,2 0 1,0 -4,0" />
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M76,32m-2,0a2,2 0 1,0 4,0a2,2 0 1,0 -4,0" />
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M32,32m-2,0a2,2 0 1,0 4,0a2,2 0 1,0 -4,0" />
+
+</vector>

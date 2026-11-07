@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Dark Avatar Background -->
+    <path
+        android:fillColor="@color/zeyu_surface"
+        android:pathData="M60,0A60,60 0 1,0 60,120A60,60 0 1,0 60,0z" />
+    <!-- Agent Shoulders / Silhouette -->
+    <path
+        android:fillColor="@color/zeyu_surface_variant"
+        android:pathData="M24,106 C24,84 40,78 60,78 C80,78 96,84 96,106 Z" />
+    <!-- Agent Head -->
+    <path
+        android:fillColor="#25354C"
+        android:pathData="M60,26 C47,26 38,36 38,50 C38,64 47,72 60,72 C73,72 82,64 82,50 C82,36 73,26 60,26 Z" />
+    <!-- Cyber Visor / Neon Scanner Eye -->
+    <path
+        android:fillColor="@color/zeyu_primary"
+        android:pathData="M44,46 H76 V52 H44 Z" />
+    <!-- Visor Glow Line -->
+    <path
+        android:strokeColor="@color/zeyu_secondary"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M40,49 H80" />
+</vector>

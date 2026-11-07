@@ -1,0 +1,53 @@
+<resources>
+    <!-- App Information -->
+    <string name="app_name">ZEYU Security Lab</string>
+    <string name="tagline">Secure the Cyber Universe</string>
+    <string name="acronym">Zero-trust Encryption for Your Users</string>
+    <string name="chinese_name">泽宇</string>
+
+    <!-- Part 1: Profile Screen ("ZEYU Agent ID") -->
+    <string name="profile_screen_title">ZEYU Agent ID</string>
+    <string name="profile_full_name">&gt; Yousef Abdelrahman</string>
+    <string name="profile_agent_id">AGENT ID // ZEYU-0001</string>
+    <string name="profile_clearance">CLEARANCE: LEVEL 3</string>
+    <string name="profile_email">yousef.business98@gmail.com</string>
+    <string name="profile_phone">+962 79 123 4567</string>
+    <string name="profile_department">Cybersecurity Student</string>
+    <string name="profile_label_email">SECURE EMAIL</string>
+    <string name="profile_label_phone">COMMS LINE</string>
+    <string name="profile_label_department">DIVISION / DEPT</string>
+    <string name="btn_edit_profile">[ EDIT_PROFILE ]</string>
+    <string name="profile_tagline">// Secure the Cyber Universe</string>
+    <string name="profile_nav_to_signup">New agent? [ REGISTER_NEW_CREDENTIALS ]</string>
+
+    <!-- Part 2: Sign-Up Screen ("Join ZEYU") -->
+    <string name="signup_screen_title">Join ZEYU</string>
+    <string name="signup_screen_subtitle">SECURE THE CYBER UNIVERSE</string>
+    <string name="signup_hint_full_name">&gt; enter_full_name</string>
+    <string name="signup_hint_email">&gt; enter_email</string>
+    <string name="signup_hint_phone">&gt; enter_phone</string>
+    <string name="signup_hint_password">&gt; enter_password</string>
+    <string name="signup_hint_confirm_password">&gt; confirm_password</string>
+    <string name="signup_password_hint">// Use 8+ characters with symbols</string>
+    <string name="signup_label_gender">OPERATOR GENDER</string>
+    <string name="signup_gender_male">Male</string>
+    <string name="signup_gender_female">Female</string>
+    <string name="signup_label_languages">PROGRAMMING LANGUAGES OF INTEREST</string>
+    <string name="signup_lang_java">Java</string>
+    <string name="signup_lang_kotlin">Kotlin</string>
+    <string name="signup_lang_python">Python</string>
+    <string name="signup_lang_cpp">C++</string>
+    <string name="signup_label_department">ACADEMIC DEPARTMENT</string>
+    <string name="signup_terms">I agree to ZEYU Terms &amp; Ethical Hacking Policy</string>
+    <string name="btn_sign_up">[ INITIALIZE_ZEYU_ACCOUNT ]</string>
+    <string name="signup_login_link">Already registered? [ ACCESS_AGENT_PROFILE ]</string>
+
+    <!-- Content Descriptions for Accessibility -->
+    <string name="cd_profile_picture">ZEYU Agent Profile Picture</string>
+    <string name="cd_zeyu_logo">ZEYU Security Lab Shield Emblem</string>
+    <string name="cd_person_icon">Operator identity icon</string>
+    <string name="cd_email_icon">Secure transmission email icon</string>
+    <string name="cd_phone_icon">Encrypted communication phone icon</string>
+    <string name="cd_lock_icon">Zero-trust security lock icon</string>
+    <string name="cd_department_icon">Security division badge icon</string>
+</resources>

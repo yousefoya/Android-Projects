@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUpScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zeyu_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/signUpRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Header: Logo, Title & Subtitle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgZeyuLogo"
+                android:layout_width="@dimen/logo_size"
+                android:layout_height="@dimen/logo_size"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="@string/cd_zeyu_logo"
+                android:src="@drawable/ic_zeyu_logo" />
+
+            <TextView
+                android:id="@+id/tvSignUpTitle"
+                style="@style/Zeyu.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/signup_screen_title" />
+
+            <TextView
+                android:id="@+id/tvSignUpSubtitle"
+                style="@style/Zeyu.TextView.Subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/signup_screen_subtitle" />
+        </LinearLayout>
+
+        <!-- Input 1: Full Name -->
+        <EditText
+            android:id="@+id/etFullName"
+            style="@style/Zeyu.EditText"
+            android:layout_marginBottom="@dimen/field_spacing"
+            android:autofillHints="name"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="@string/signup_hint_full_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+
+        <!-- Input 2: Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/Zeyu.EditText"
+            android:layout_marginBottom="@dimen/field_spacing"
+            android:autofillHints="emailAddress"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="@string/signup_hint_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <!-- Input 3: Phone -->
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/Zeyu.EditText"
+            android:layout_marginBottom="@dimen/field_spacing"
+            android:autofillHints="phoneNumber"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="@string/signup_hint_phone"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+        <!-- Input 4: Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/Zeyu.EditText"
+            android:layout_marginBottom="4dp"
+            android:autofillHints="password"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="@string/signup_hint_password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <!-- Password Requirement Hint -->
+        <TextView
+            android:id="@+id/tvPasswordHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="@dimen/field_spacing"
+            android:fontFamily="monospace"
+            android:text="@string/signup_password_hint"
+            android:textColor="@color/zeyu_text_secondary"
+            android:textSize="12sp" />
+
+        <!-- Input 5: Confirm Password -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            style="@style/Zeyu.EditText"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:autofillHints="password"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="@string/signup_hint_confirm_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <!-- Section: Operator Gender -->
+        <TextView
+            android:id="@+id/tvGenderLabel"
+            style="@style/Zeyu.TextView.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/signup_label_gender" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                style="@style/Zeyu.RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signup_gender_male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                style="@style/Zeyu.RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signup_gender_female" />
+        </RadioGroup>
+
+        <!-- Section: Programming Languages of Interest -->
+        <TextView
+            android:id="@+id/tvLanguagesLabel"
+            style="@style/Zeyu.TextView.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/signup_label_languages" />
+
+        <!-- 2x2 Clean Layout for Programming Languages -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbJava"
+                style="@style/Zeyu.CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signup_lang_java" />
+
+            <CheckBox
+                android:id="@+id/cbKotlin"
+                style="@style/Zeyu.CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signup_lang_kotlin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbPython"
+                style="@style/Zeyu.CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signup_lang_python" />
+
+            <CheckBox
+                android:id="@+id/cbCpp"
+                style="@style/Zeyu.CheckBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/signup_lang_cpp" />
+        </LinearLayout>
+
+        <!-- Section: Academic Department -->
+        <TextView
+            android:id="@+id/tvDepartmentLabel"
+            style="@style/Zeyu.TextView.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/signup_label_department" />
+
+        <Spinner
+            android:id="@+id/spinnerDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:background="@drawable/bg_spinner"
+            android:entries="@array/department_list"
+            android:minHeight="@dimen/input_height"
+            android:paddingStart="4dp"
+            android:paddingEnd="16dp"
+            android:popupBackground="@color/zeyu_surface"
+            android:spinnerMode="dropdown" />
+
+        <!-- Terms and Conditions CheckBox -->
+        <CheckBox
+            android:id="@+id/cbTerms"
+            style="@style/Zeyu.CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/section_spacing"
+            android:text="@string/signup_terms"
+            android:textSize="@dimen/text_size_caption" />
+
+        <!-- Initialize ZEYU Account Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            style="@style/Zeyu.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="16dp"
+            android:text="@string/btn_sign_up" />
+
+        <!-- Navigation helper: Link to Profile -->
+        <TextView
+            android:id="@+id/tvLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:text="@string/signup_login_link"
+            android:textColor="@color/zeyu_secondary"
+            android:textSize="@dimen/text_size_caption" />
+
+    </LinearLayout>
+</ScrollView>

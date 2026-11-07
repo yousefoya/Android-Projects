@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing System -->
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="field_spacing">12dp</dimen>
+    <dimen name="section_spacing">20dp</dimen>
+    <dimen name="item_spacing_small">8dp</dimen>
+
+    <!-- Component Sizing -->
+    <dimen name="input_height">52dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="avatar_size">120dp</dimen>
+    <dimen name="logo_size">48dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_small">18dp</dimen>
+
+    <!-- Corner Radii -->
+    <dimen name="corner_radius_input">12dp</dimen>
+    <dimen name="corner_radius_card">16dp</dimen>
+    <dimen name="corner_radius_button">24dp</dimen>
+    <dimen name="corner_radius_badge">8dp</dimen>
+
+    <!-- Typography Text Sizes -->
+    <dimen name="text_size_title">26sp</dimen>
+    <dimen name="text_size_subtitle">13sp</dimen>
+    <dimen name="text_size_profile_name">22sp</dimen>
+    <dimen name="text_size_section_label">14sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_caption">13sp</dimen>
+    <dimen name="text_size_button">16sp</dimen>
+    <dimen name="text_size_badge">11sp</dimen>
+</resources>

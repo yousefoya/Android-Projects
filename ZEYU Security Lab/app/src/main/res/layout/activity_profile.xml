@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zeyu_background"
+    android:fillViewport="true">
+
+    <!-- Root Layout: vertical LinearLayout with 24dp padding as requested -->
+    <LinearLayout
+        android:id="@+id/profileRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Header Row: Shield Logo + Screen Title -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgHeaderLogo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/cd_zeyu_logo"
+                android:src="@drawable/ic_zeyu_logo" />
+
+            <TextView
+                android:id="@+id/tvScreenTitle"
+                style="@style/Zeyu.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_screen_title"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <!-- Profile Avatar with Neon Ring -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgProfilePicture"
+                android:layout_width="@dimen/avatar_size"
+                android:layout_height="@dimen/avatar_size"
+                android:contentDescription="@string/cd_profile_picture"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_yousef"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Zeyu.Circle"
+                app:strokeColor="@color/zeyu_primary"
+                app:strokeWidth="3dp" />
+        </FrameLayout>
+
+        <!-- Full Name -->
+        <TextView
+            android:id="@+id/tvFullName"
+            style="@style/Zeyu.TextView.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="@string/profile_full_name"
+            android:textSize="@dimen/text_size_profile_name" />
+
+        <!-- Agent Identifier -->
+        <TextView
+            android:id="@+id/tvAgentId"
+            style="@style/Zeyu.TextView.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/profile_agent_id" />
+
+        <!-- Clearance Level Badge -->
+        <TextView
+            android:id="@+id/tvClearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_badge_clearance"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.08"
+            android:paddingStart="12dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="4dp"
+            android:text="@string/profile_clearance"
+            android:textColor="@color/zeyu_primary"
+            android:textSize="@dimen/text_size_badge"
+            android:textStyle="bold" />
+
+        <!-- Details Card (Security Badge Info) -->
+        <LinearLayout
+            android:id="@+id/cardProfileDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Email Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Zeyu.TextView.RowLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_label_email" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    style="@style/Zeyu.TextView.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/profile_email" />
+            </LinearLayout>
+
+            <!-- Divider 1 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/zeyu_divider" />
+
+            <!-- Phone Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Zeyu.TextView.RowLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_label_phone" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    style="@style/Zeyu.TextView.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/profile_phone" />
+            </LinearLayout>
+
+            <!-- Divider 2 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/zeyu_divider" />
+
+            <!-- Department Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Zeyu.TextView.RowLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_label_department" />
+
+                <TextView
+                    android:id="@+id/tvDepartment"
+                    style="@style/Zeyu.TextView.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/profile_department" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Edit Profile Action Button -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            style="@style/Zeyu.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="16dp"
+            android:text="@string/btn_edit_profile" />
+
+        <!-- Navigation helper: Link to Sign-Up -->
+        <TextView
+            android:id="@+id/tvGoToSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:text="@string/profile_nav_to_signup"
+            android:textColor="@color/zeyu_secondary"
+            android:textSize="@dimen/text_size_caption" />
+
+        <!-- Footer Tagline -->
+        <TextView
+            android:id="@+id/tvTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="@string/profile_tagline"
+            android:textColor="@color/zeyu_text_secondary"
+            android:textSize="@dimen/text_size_caption" />
+
+    </LinearLayout>
+</ScrollView>

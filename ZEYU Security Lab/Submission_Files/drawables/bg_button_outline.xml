@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/zeyu_ripple_light">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+            <stroke
+                android:width="1.5dp"
+                android:color="@color/zeyu_secondary" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+</ripple>
